@@ -1,12 +1,24 @@
 # Credits
 
-This repository is structured to support bundled third-party assets, but the playable v1 currently uses Canvas/CSS artwork and Web Audio fallback sounds so it works offline and on GitHub Pages without external requests.
+## BGM
 
-Planned/verified source packs:
+- MusMus / watson — 「ShakujiiPark」
+- Source: https://musmus.main.jp/chiptune.html
+- License/terms: https://musmus.main.jp/info.html
+- Required credit: BGM: MusMus
+
+The game is configured to load the file from:
+
+`assets/audio/bgm/shakujii-park.mp3`
+
+Download the track from the official MusMus site and place it at that path. Do not hotlink or redistribute the source asset as a standalone music file.
+
+## Other planned/verified assets
 
 - Kenney — Shape Characters — CC0 1.0 — https://kenney.nl/assets/shape-characters
 - Kenney — UI Pack — CC0 1.0 — https://kenney.nl/assets/ui-pack
 - Kenney — UI Audio — CC0 1.0 — https://kenney.nl/assets/ui-audio
-- 魔王魂 / 森田交一 — 8bit29「子猫のもんたのクッキー屋さん」 — https://maou.audio/bgm_8bit29/
 
-Note: the execution environment used to assemble this build could not directly download the binary asset files, so no third-party binary files are bundled in this version. Do not hotlink the source websites. Download permitted assets locally before adding them to `assets/`.
+## Current fallback
+
+If the MusMus MP3 is not present or cannot be decoded, the game temporarily falls back to a lightweight Web Audio loop so gameplay remains functional.
